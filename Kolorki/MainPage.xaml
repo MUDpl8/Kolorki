@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns = "http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x = "http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class = "Kolorki.MainPage">
+    <Grid ColumnDefinitions = "*, auto" RowDefinitions = "*, auto, auto, auto" ColumnSpacing = "25" Padding = "70">
+        <Rectangle x:Name = "kwadrat" Grid.Row ="0" Grid.ColumnSpan = "2" BackgroundColor = "Silver" />
+        <Slider Grid.Row = "1" x:Name = "SliderR" ValueChanged = "Slider_ValueChanged" />
+        <Label Text = "Czerwony" TextColor = "Red" FontSize = "15" WidthRequest = "70" Grid.Row = "1" Grid.Column = "1" />
+        <Slider Grid.Row = "2" x:Name = "SliderG" ValueChanged = "Slider_ValueChanged" />
+        <Label Text = "Zielony" TextColor = "Green" FontSize = "15" WidthRequest = "70" Grid.Row = "2" Grid.Column = "1" />
+        <Slider Grid.Row = "3" x:Name = "SliderB" ValueChanged = "Slider_ValueChanged" />
+        <Label Text = "Niebieski" TextColor = "Blue" FontSize = "15" WidthRequest = "70" Grid.Row = "3" Grid.Column = "1" />
+    </Grid>
+
+</ContentPage>
